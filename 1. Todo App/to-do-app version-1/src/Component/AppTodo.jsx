@@ -1,4 +1,4 @@
-const AppToDo = () => {
+const AddToDo = () => {
   return (
     <div className="row my-row">
       <div className="col-6">
@@ -14,4 +14,4 @@ const AppToDo = () => {
   );
 }
 
-export default AppToDo;
+export default AddToDo;
