@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Rock Paper Scissor</h1>
+
+        <button class="btn" onclick="
+        let choice = generateComputerChoice();
+        findWhoWon(choice,`Rock`);
+        ">Rock</button>
+
+        <button class="btn" onclick="
+        let choice2 = generateComputerChoice();
+        findWhoWon(choice2,`Paper`);
+        ">Paper</button>
+
+        <button class="btn" onclick="
+        let choice3 = generateComputerChoice();
+        findWhoWon(choice3,`Scissor`);
+        ">Scissor</button>
+
+        <p class="para"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

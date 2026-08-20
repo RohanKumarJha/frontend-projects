@@ -1,0 +1,46 @@
+<!-- absolute unit - px -->
+<!-- relative unit - %, em, vh, rem, vw -->
+<!-- % - Take % size of parent -->
+<!-- em - take % font size of parent -->
+<!-- rem - take % font size of root element -->
+<!-- vw - viewport width; vh - viewport height -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Unit</title>
+    <style>
+        /* * {
+            font-size: 100px;
+        }
+        #first {
+            height: 200px; width: 200px;
+            background-color: aquamarine;
+            font-size: 25px;
+        }
+        #second {
+            height: 30%; width: 50%;
+            background-color: #00f;
+            font-size: 1rem;
+        } */
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #first {
+            height: 50vh;
+            width: 100vw;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div id="first">
+        First
+        <!-- <div id="second">Second</div> -->
+    </div>
+</body>
+</html>

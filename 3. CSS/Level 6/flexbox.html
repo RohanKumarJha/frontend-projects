@@ -1,0 +1,71 @@
+    <!-- Container Properties -->
+<!-- display - flex; -->
+<!-- flex-direction : row, column, row-reverse, column-reverse -->
+<!-- justify-content : flex-start, flex-end, center, space-between, space-around, space-evenly -->
+<!-- flex-wrap : nowrap, wrap, wrap-reverse -->
+<!-- align-items : center, start, end etc.... -->
+<!-- align-content : same as align items but for 2-D -->
+
+    <!-- Items Properties -->
+<!-- align-self : start,center, etc... -->
+<!-- flex-shrink : all items shrink apart from shrink item -->
+<!-- flex-grow : it's not default grow after max size -->
+<!-- order : change the order -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90vw;
+            height: 60vh;
+            margin: 40px 80px;
+            display: flex;
+            background-color: beige;
+            /* justify-content: flex-end; */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            justify-content: space-evenly;
+            /* flex-wrap: wrap; */
+            /* align-items: center; */
+            /* align-content: space-around; */
+        }
+        .items {
+            margin-top: 20px;
+            border: 2px solid black;
+            height: 30%;
+            width: 100px;
+            background-color: #d00;
+        }
+        #item1{
+            order: 4;
+        }
+        #item2{
+            order: 1;
+        }
+        #item3 {
+            /* align-self: center; */
+            /* flex-shrink: 0; */
+            order: 3;
+        }
+        #item4{
+            order: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="item1">Item1</div>
+        <div class="items" id="item2">Item2</div>
+        <div class="items" id="item3">Item3</div>
+        <div class="items" id="item4">Item4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h2><a href="home.html">AutoMob-Mechanic</a></h2>
+        <a href="home.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="booking.html">Booking</a>
+        <a href="#">contact@automob.co.in <i class="fa-regular fa-envelope"></i></a>
+        <big>999 999 9999 <i class="fa-solid fa-phone"></i></big>
+    </header> <hr>
+
+    <main>
+        <h1>Schedule Your Appointment</h1>
+        <form action="booking-success.html">
+            <label for="date">Appointment Date : </label>
+            <input type="date" required> <br><br>
+            <label for="address">Address : </label>
+            <textarea name="address" id="address" rows="5" cols="30" required></textarea><br><br>
+            <label for="city">City : </label>
+            <input type="text" placeholder="Mumbai, Pune" required> <br><br>
+            <label for="states">State : </label>
+            <input list="state" name="state" id="states" required>
+            <datalist id="state">
+                <option value="Assam"></option>
+                <option value="Bihar"></option>
+                <option value="Gujarat"></option>
+                <option value="Goa"></option>
+            </datalist> <br><br>
+            <label for="notification">Send Notification : </label>
+            <input type="checkbox" id="email" name="notification" required>
+            <label for="email">Email</label>
+            <input type="checkbox" id="sms" name="notification" required>
+            <label for="sms">SMS</label> <br><br>
+            <button type="submit">Book</button> <br><br>
+        </form>
+    </main> <hr>
+
+    <footer>
+        <p>Copyright &#169; 2020 AutoMob-Mechanic. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

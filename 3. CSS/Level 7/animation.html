@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 2px solid #000;
+            border-radius: 5px;
+            background-color: plum;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            animation: ghumakkad 2s ease-in-out 1s infinite alternate;
+            /* animation-iteration-count: infinite;
+            animation-direction: alternate; */
+        }
+        @keyframes ghumakkad {
+            /* from {left : 10px;}
+            to {left : 100%;} */
+
+            0% {left : 10px;}
+            50% {left: 50%;}
+            60% {left: 60%;}
+            100% {left : 100%;}
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Animation</div>
+</body>
+</html>

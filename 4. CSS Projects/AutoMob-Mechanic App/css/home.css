@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+header {
+    height: 6vh;
+    padding: 1% 2%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #00a;
+}
+header b {
+    font-size: 32px;
+}
+header b a {
+    color: #fff;
+    text-decoration: none;
+}
+header nav {
+    display: flex;
+    align-items: center;
+}
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 6px;
+}
+
+/* MAIN */
+main {
+    height: 75vh;
+    padding: 1% 1%;
+}
+main img {
+    width: 45;
+    border-radius: 2%;
+    margin-right: 20px;
+}
+main h3 {
+    line-height: 2;
+    font-size: 24px;
+}
+main h4 {
+    line-height: 2;
+}
+#box1 h3, #box1 q{
+    line-height: 2;
+}
+#box2 {
+    line-height: 2;
+}
+#box2 button {
+    margin: 18px 2px;
+    background-color: #00c;
+    color: #ffe;
+    width: 18%;
+    height: 42px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #00e;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+footer span {
+    color: #fff;
+    font-size: 14px;
+}

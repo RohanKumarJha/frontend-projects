@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <header>
+        <img src="Images/pexels-mirrographer-1116302.jpg" alt="Image not found" width="30%">
+        <h1>Friendship Zone</h1>
+    </header>
+
+    <main>
+        <h2>Add your details to register</h2>
+        <form action="user-confirmation.html">
+        <label for="name">Name : </label>
+        <input type="text" id="name" pattern="^[A-Za-z]{3,}$" placeholder="Enter your name" required> <br><br>
+        <label for="email">Email : </label>
+        <input type="email" required> <br><br>
+        <label for="age">Age</label>
+        <input type="number" min="18" required> <br><br>
+        <label for="birth">Birthday : </label>
+        <input type="date"> <br><br>
+        Gender : 
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">M</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">F</label> <br><br>
+        <label for="About : ">About</label>
+        <textarea id="About" rows="6" cols="40"></textarea> <br><br>
+        <label for="phone">Phone : </label>
+        <input type="tel" min="10" max="10"> <br><br>
+        <label>Interested in : </label>
+        <input type="checkbox" id="friendship" name="interest">
+        <label for="friendship">Friendship</label>
+        <input type="checkbox" name="interest" id="dating">
+        <label for="dating">Dating</label> <br><br>
+        <label for="attachment">Attachment</label>
+        <input type="file" id="attachment"> <br><br>
+        <button type="submit">Register</button>
+        <button type="submit">Register as admin</button>
+        </form>
+    </main>
+</body>
+</html>

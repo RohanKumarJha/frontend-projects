@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ques3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            height: 100vh;
+            width: 100vw;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 50px;
+        }
+        .box {
+            height: 100px;
+            width: 100px;
+        }
+        #box1 {
+            background-color: lightblue;
+            flex-grow: 5px;
+        }
+        #box2 {
+            background-color: lightcoral;
+            flex-shrink: 0.2;
+        }
+        #box3 {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Box 1</div>
+        <div class="box" id="box2">Box 2</div>
+        <div class="box" id="box3">Box 3</div>
+    </div>
+</body>
+</html>

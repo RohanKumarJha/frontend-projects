@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+    <Style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            height: 10vh;
+            width: 100vw;
+            background-color: aliceblue;
+            padding: 64px;
+        }
+        .header nav a {
+            text-decoration: none;
+            color: #000;
+            margin-left : 104px;
+        }
+        .first {
+            height: 15vh;
+            width: 15vw;
+            margin-left: 500px;
+            border: 2px solid #000;
+            background-color: #0f0;
+            border-radius: 50%;
+            text-align: center;
+        }
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            border: 2px solid #000;
+            margin: 50px 175px;
+            display: inline;
+            position: absolute;
+        }
+        #box1 {
+            background-color: #f00;
+            z-index: 2;
+        }
+        #box2 {
+            background-color: #0f0;
+            position: fixed;
+            right: 0;
+        }
+        #box3 {
+            background-color: #00f;
+            /* z-index: 3; */
+        }
+    </Style>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">News</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+    <main>
+        <div class="first">Div 1</div>
+        <section>
+            <div class="box" id="box1">Box1</div>
+            <div class="box" id="box2">Box2</div>
+            <div class="box" id="box3">Box3</div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod illo facere iste! </p>
+    </footer>
+</body>
+</html>

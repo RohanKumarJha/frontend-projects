@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even Odd</title>
+    <Style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin: 12px 18px;
+            line-height: 1.5;
+        }
+        .show {
+            margin: 12px;
+            font-size: 38px;
+            font-weight: 900;
+        }
+    </Style>
+</head>
+<body>
+    <div class="container">
+        <p class="show"></p>
+    </div>
+    <script>
+        let display = '';
+        document.querySelector('.show').innerText = display;
+
+        function check(num) {
+            if(num%2==0) {
+                let display = `${num} is even`;
+                document.querySelector('.show').innerText = display;
+            } else {
+                let display = `${num} is odd`;
+                document.querySelector('.show').innerText = display;
+            }
+        }
+
+        let num = 32;
+        check(num);
+        
+    </script>
+</body>
+</html>

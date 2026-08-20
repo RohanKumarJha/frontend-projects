@@ -1,0 +1,62 @@
+Level 1
+****************
+Basic Syntax
+Color Property
+Including Styles
+HTML Refresher
+Comments
+MDN Documentation
+Browser Tools
+Selectors
+
+Level 2
+****************
+Background-Color Property
+Color System
+Absolute Units
+Height & Width Property
+Background-image Property
+Visibility Property
+
+Level 3
+****************
+Text-Align Property
+Text-Decoration Property
+Text-Transform Property
+Line-Height Property
+Font Properties
+Font Family
+Icon using fonts
+
+Level 4
+****************
+What is Box Model
+Padding Property
+Margin Property
+Border Property
+
+Level 5
+****************
+Display Property
+Responsive Websites
+Relative Units
+Position Property
+Semantic Tags
+
+Level 6
+****************
+Float Property
+Flexbox
+Flex Model
+Flex Direction
+Flexbox Container
+Flex items
+Grid Layout
+Media Queries
+
+Level 7
+****************
+Pseudo Classes
+Transitions
+CSS Transform
+Animation

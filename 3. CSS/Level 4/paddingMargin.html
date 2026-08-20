@@ -1,0 +1,41 @@
+<!-- border : size style color -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding Properties</title>
+    <style>
+        * {
+            margin: 0; padding: 0;
+        }
+        #first {
+            width: 150px;
+            height: 150px;
+            font-size: 18px;
+            background-color: rgb(41, 209, 209);
+            /* padding-top: 18px; padding-right: 26px; padding-bottom: 18px; padding-left: 26px; */
+            /* padding: 18px 26px 18px 26px; */
+            /* padding: 18px 26px; */
+            padding: 25px;
+            margin: 100px;
+            border: 10px solid #000;
+            border-radius: 10%;
+            box-sizing: border-box;
+        }
+        #second {
+            width: 150px;
+            height: 150px;
+            font-size: 18px;
+            background-color: rgb(209, 41, 145);
+            padding: 25px;
+            margin: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="first">Padding checker</div>
+    <div id="second">Padding checker</div>
+</body>
+</html>

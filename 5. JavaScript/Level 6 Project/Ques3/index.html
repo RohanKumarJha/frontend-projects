@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ques3</title>
+</head>
+<body>
+    <p class="final"></p>
+
+    <script>
+        let fahrenheit;
+        document.querySelector('.final').innerText = fahrenheit;
+
+        function conversion(celsius) {
+            fahrenheit = (9/5)*celsius+32;
+            document.querySelector('.final').innerText = fahrenheit;
+        }
+
+        let celsius = 5;
+        conversion(celsius);
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!-- transitions : property duration timing-function delay -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        .transitions {
+            height: 25px;
+            width: 150px;
+            background-color: forestgreen;
+            border: 2px solid #000;
+            border-radius: 10px;
+            transition: all 1s ease-in-out 0.5s;
+            /* transition-property: none; */
+            /* transition-timing-function: ease-in; */
+        }
+        .transitions:hover {
+            background-color: #f00;
+            height: 30px;
+            width: 160px;
+        }
+        .transitions:active {
+            background-color: indianred;
+            height: 30px;
+            width: 160px;
+        }
+    </style>
+</head>
+<body>
+    <button class="transitions">Click Me</button>
+</body>
+</html>

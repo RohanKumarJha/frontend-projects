@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ques4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #box {
+            height: 150px;
+            width: 150px;
+            background-color: #0f0;
+        }
+        @media screen and (min-width : 400px) {
+            #box {
+                background-color: #00f;
+            }
+        }
+        @media screen and (min-width : 300px) and (max-width : 400px) {
+            #box {
+                background-color: #f00;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box">Box1</div>
+    </div>
+</body>
+</html>

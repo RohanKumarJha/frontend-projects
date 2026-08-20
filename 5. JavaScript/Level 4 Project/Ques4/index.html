@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ques4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .btn {
+            font-size: 20px;
+            margin: 10px 20px;
+            font-weight: 900;
+            border-radius: 10px;
+            border: none;
+            background-color: rgb(140, 208, 140);
+            padding: 10px 20px;
+        }
+        .amount {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 20px;
+        }
+        .msg {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn" onclick="document.querySelector('.amount').innerText = `Your total bill is : ${billAmount}, but the type is ${typeof billAmount}.`;
+    document.querySelector('.msg').innerText = `So not possible to find amount after including ${GST}% GST, so convert the string to number first, then try again...`;">Show Bill</button>
+    <p class="amount"></p>
+    <p class="msg"></p>
+    <script>
+        let billAmount = '2137.5';
+        let GST = 18;
+        document.querySelector('.amount').innerText = ``;
+        document.querySelector('.msg').innerText = '';
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+Level 1
+****************
+Js in Console
+DOM Manipulation
+Chrome Extension
+Programming Language
+Syntax
+HTML/CSS/JavaScript
+
+Level 2
+****************
+Arithmetic Operators
+Order of Operations
+Types of Numbers
+Don't learn Syntax
+Strings
+TypeOf Operator
+
+Level 3
+****************
+VS Code IDE
+HTML Tags Introduction
+CSS Introduction
+Query Selector
+Script Tag
+Comments
+
+Level 4
+****************
+What are Variables
+Syntax Rules
+Updating Values
+Myntra Bag Exercise
+Naming Conventions
+Ways to create Variables
+
+Level 5
+****************
+What are Booleans
+Comparison Operators
+if-else
+Logincal Operator
+Scope
+Truthy and falsy Values
+If alternatives
+
+Level 6
+****************
+What are functions
+Function Syntax
+Return Statement
+Function Parameters
+
+Level 7
+****************
+What is an Object
+Object Syntax
+Accessing Objects
+Inside Objects
+Autoboxing
+Object References
+Object Shortcuts
+
+Level 8
+****************
+What is JSON
+Local Storage
+Date
+DOM Properties & Methods
+
+Level 9
+****************
+What is an Array
+Array Syntax & values
+Array Properties & Methods
+What is a loop
+While Loop
+Do While Loop
+For Loop
+Accumulator Pattern
+Break & Continue
+
+Level 10
+****************
+Anonymous Functions As Values
+Arrow Functions
+setTimeout & setInterval
+Event Listener
+For Each Loop
+Array methods

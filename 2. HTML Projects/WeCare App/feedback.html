@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html"><img src="Images/logo.PNG" alt="Image Not Found"></a>
+            <a href="user_profile.html">View Profile</a>
+            <a href="myappoinments.html">My Appointments</a>
+            <a href="user_home.html">View Coaches</a>
+            <a href="feedback_success.html">Feedback</a>
+            <a href="contact_us.html">Contact Us</a>
+            <a href="home.html">Logout</a>
+        </nav> <br>
+    </header> <hr> 
+
+    <main>
+        <h2>Feedback Form</h2>
+        <label for="name">Name</label> <br>
+        <input type="text" pattern="^[A-Za-z]{3,50}$" required> <br><br>
+        <label for="email">Email</label> <br>
+        <input type="email" placeholder="Ex david@gmail.com" required> <br><br>
+        <label for="phone">Phone Number : </label> <br>
+        <select name="code" id="phone" required>
+            <option>Code</option>
+            <option>+213</option>
+            <option>+91</option>
+            <option>+244</option>
+            <option>+61</option>
+        </select>
+        <input type="tel" pattern="^[\d]{10}$" placeholder="Ex 8347652342"> <br><br>
+        <label for="feedback">Feedback Category : </label> <br>
+        <input list="feedbacks" name="feedbacks" id="feedback">
+        <datalist id="feedbacks">
+            <option value="Confidence Issues"></option>
+            <option value="Depression Issues"></option>
+            <option value="Overweight Issues"></option>
+            <option value="Hypertension Issues"></option>
+        </datalist> <br><br>
+        <label>How do you rate your overall Experience?</label> <br>
+        <input type="radio" id="poor" name="experience">
+        <label for="poor">Poor</label>
+        <input type="radio" id="average" name="experience">
+        <label for="average">Average</label>
+        <input type="radio" id="good" name="experience">
+        <label for="good">Good</label>
+        <input type="radio" id="veryGood" name="experience">
+        <label for="veryGood">Very Good</label> <br><br>
+        <label for="Feedback">Feedback : </label> <br>
+        <textarea name="feedback" id="Feedback" rows="4" cols="40"></textarea> <br><br>
+        <a href="feedback_success.html"><button type="submit">Submit</button></a>
+        <input type="reset">
+    </main> <hr>
+
+    <footer>
+        <h3>Copyright&copy;2022 WeCare. All rights reserved.</h3>
+    </footer>
+</body>
+</html>

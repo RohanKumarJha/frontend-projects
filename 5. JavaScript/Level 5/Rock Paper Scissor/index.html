@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Rock Paper Scissor</h1>
+
+        <button class="btn" onclick="
+        if(compChoice == `Rock`) {
+            let finalResult = `Computer choose ${compChoice}, User choose Rock, so it's a tie.`;
+            document.querySelector('.para').innerText = finalResult;
+        } else if(compChoice == 'Paper') {
+            let finalResult = `Computer choose ${compChoice}, User choose Rock, so User loose.`;
+            document.querySelector('.para').innerText = finalResult;
+        } else {
+            let finalResult = `Computer choose ${compChoice}, User choose Rock, so User won.`;
+            document.querySelector('.para').innerText = finalResult;
+        }
+        ">Rock</button>
+
+        <button class="btn" onclick="
+        if(compChoice == `Rock`) {
+            let finalResult = `Computer choose ${compChoice}, User choose Paper, so User won.`;
+            document.querySelector('.para').innerText = finalResult;
+        } else if(compChoice == `Paper`) {
+            let finalResult = `Computer choose ${compChoice}, User choose Paper, so it's a tie.`;
+            document.querySelector('.para').innerText = finalResult;
+        } else {
+            let finalResult = `Computer choose ${compChoice}, User choose Paper, so User loose.`;
+            document.querySelector('.para').innerText = finalResult;
+        }
+        ">Paper</button>
+
+        <button class="btn" onclick="
+        if(compChoice == `Rock`) {
+            let finalResult = `Computer choose ${compChoice}, User choose Scissor, so User loose.`;
+            document.querySelector('.para').innerText = finalResult;
+        } else if(compChoice == `Paper`) {
+            let finalResult = `Computer choose ${compChoice}, User choose Scissor, so User won.`;
+            document.querySelector('.para').innerText = finalResult;
+        } else {
+            let finalResult = `Computer choose ${compChoice}, User choose Scissor, so it's a tie.`;
+            document.querySelector('.para').innerText = finalResult;
+        }
+        ">Scissor</button>
+
+        <p class="para"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
