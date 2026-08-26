@@ -1,0 +1,21 @@
+
+.todo-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+input {
+  width: 100%;
+}
+
+.items-container {
+  text-align: left;
+}
+
+.rohan-button {
+  min-width: 80px;
+}
+
+.rohan-row {
+  margin: 10px 5px;
+}
