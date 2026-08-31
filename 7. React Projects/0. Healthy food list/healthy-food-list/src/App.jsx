@@ -10,11 +10,19 @@ const App = () => {
   // let foodItems = [];
   let foodItems = ['Dal', 'Green Vegetable', 'Roti', 'Salad', 'Milk', 'Ghee'];
 
+  let textToShow = "Food item entered by user";
+
+  const handleOnChange = (event) => {
+    console.log(event.target.value);
+    textToShow = event.target.value;
+  }
+
   return (
     <Container>
       <h1 className='food-heading'>Healthy Food</h1>
       <ErrorMessage foodItems={foodItems} />
-      <FoodInput />
+      <FoodInput handleOnChange={handleOnChange} />
+      <p>{textToShow}</p>
       <FoodItems foodItems={foodItems} />
     </Container>
   );
