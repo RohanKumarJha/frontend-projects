@@ -1,9 +1,13 @@
+import { useState } from "react";
 import Item from "./Item";
 
 const FoodItems = ({ foodItems }) => {
 
-  const handleBuyButtonClicked = (item) => {
-    console.log(`${item} is bought`);
+  let [activeItems, setActiveItems] = useState([]);
+
+  const handleBuyButtonClicked = (item, event) => {
+    let newItems = [...activeItems, item];
+    setActiveItems(newItems);
   }
 
   return (
@@ -11,7 +15,8 @@ const FoodItems = ({ foodItems }) => {
       {foodItems.map((item) => (
         <Item key={item}
           item={item}
-          handleBuyButton={() => handleBuyButtonClicked(item)} />
+          bought={activeItems.includes(item)}
+          handleBuyButton={(event) => handleBuyButtonClicked(item, event)} />
       ))}
     </ul>
   );
