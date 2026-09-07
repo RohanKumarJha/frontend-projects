@@ -1,6 +1,10 @@
+import styles from './Item.module.css';
+
 const Item = ({ item }) => {
   return <>
-    <li className="list-group-item">{item}</li>
+    <li className={`${styles["my-item"]}`}>
+      <span className={`${styles["my-span"]}`}>{item}</span>
+    </li>
   </>
 }
 
