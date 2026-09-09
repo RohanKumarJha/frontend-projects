@@ -9,9 +9,13 @@ const App = () => {
 
   let foodItems = ["Dal", "Green vegetable", "Roti", "Salad", "Milk", "Ghee"];
 
+  const handleOnChange = (event) => {
+    console.log(event.target.value);
+  }
+
   return <Container>
     <h1 className='food-heading'>Healthy food</h1>
-    <FoodInput />
+    <FoodInput handleOnChange={handleOnChange} />
     <FoodItems foodItems={foodItems} />
     <ErrorMessage foodItems={foodItems} />
   </Container>
