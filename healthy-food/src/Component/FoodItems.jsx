@@ -6,7 +6,7 @@ const FoodItems = ({ foodItems }) => {
     <ul className="list-group">
       {foodItems.map(item => (
         <Item key={item} item={item} />
-      ))};
+      ))}
     </ul>
   </>
 }

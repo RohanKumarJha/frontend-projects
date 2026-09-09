@@ -1,8 +1,12 @@
-.my-item {
+/* .my-item {
   background-color: khaki;
-}
+} */
 
 .my-span {
   font-weight: 500;
   color: orange;
+}
+
+.button {
+  float: right;
 }
