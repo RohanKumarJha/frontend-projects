@@ -3,6 +3,7 @@ import FoodItems from './Component/FoodItems';
 import ErrorMessage from './Component/ErrorMessage';
 import './App.css';
 import Container from './Component/Container';
+import FoodInput from './Component/FoodInput';
 
 const App = () => {
 
@@ -10,6 +11,7 @@ const App = () => {
 
   return <Container>
     <h1 className='food-heading'>Healthy food</h1>
+    <FoodInput />
     <FoodItems foodItems={foodItems} />
     <ErrorMessage foodItems={foodItems} />
   </Container>
