@@ -10,3 +10,7 @@
 .button {
   float: right;
 }
+
+.bought-item {
+  background-color: lightgreen; 
+}

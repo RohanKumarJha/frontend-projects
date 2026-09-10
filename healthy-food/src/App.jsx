@@ -8,19 +8,20 @@ import { useState } from 'react';
 
 const App = () => {
 
-  let foodItems = ["Dal", "Green vegetable", "Roti", "Salad", "Milk", "Ghee"];
+  let [foodItems, setFoodItems] = useState([]);
 
-  const handleOnChange = (event) => {
-    console.log(event.target.value);
-    setTextToShow(event.target.value);
+  const onKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      let newFoodItem = event.target.value;
+      event.target.value = "";
+      let newItems = [...foodItems, newFoodItem];
+      setFoodItems(newItems);
+    }
   }
-
-  let [textToShow, setTextToShow] = useState();
 
   return <Container>
     <h1 className='food-heading'>Healthy food</h1>
-    <FoodInput handleOnChange={handleOnChange} />
-    <p>{textToShow}</p>
+    <FoodInput handleKeyDown={onKeyDown} />
     <FoodItems foodItems={foodItems} />
     <ErrorMessage foodItems={foodItems} />
   </Container>
