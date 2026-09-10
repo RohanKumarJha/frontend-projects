@@ -4,6 +4,7 @@ import ErrorMessage from './Component/ErrorMessage';
 import './App.css';
 import Container from './Component/Container';
 import FoodInput from './Component/FoodInput';
+import { useState } from 'react';
 
 const App = () => {
 
@@ -11,10 +12,10 @@ const App = () => {
 
   const handleOnChange = (event) => {
     console.log(event.target.value);
-    textToShow = event.target.value;
+    setTextToShow(event.target.value);
   }
 
-  let textToShow = "Food Item entered by User";
+  let [textToShow, setTextToShow] = useState();
 
   return <Container>
     <h1 className='food-heading'>Healthy food</h1>
