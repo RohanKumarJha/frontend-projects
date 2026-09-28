@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
-import AppHeader from './Components/AppHeader';
+import AppHeader from './Components/AppName';
 import AddToDo from './Components/AddToDo';
 import ToDoItem from './Components/ToDoItem';
 import ToDoItems from './Components/ToDoItems';
