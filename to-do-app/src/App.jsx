@@ -3,19 +3,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 import AppHeader from './Components/AppHeader';
 import AddToDo from './Components/AddToDo';
-import ToDoItem1 from './Components/ToDoItem1';
-import ToDoItem2 from './Components/ToDoItem2';
+import ToDoItem from './Components/ToDoItem';
 
 function App() {
   return (
     <center className="todo-container">
       <AppHeader />
-
       <AddToDo />
-
       <div className="items-container">
-        <ToDoItem1 />
-        <ToDoItem2 />
+        <ToDoItem toDoName={"Buy Milk"} toDoDate={"4/10/2023"} />
+        <ToDoItem toDoName={"Go to College"} toDoDate={"4/10/2023"} />
       </div>
     </center>
   );

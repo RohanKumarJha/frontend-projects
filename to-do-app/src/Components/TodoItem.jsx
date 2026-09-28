@@ -1,8 +1,4 @@
-const ToDoItem2 = () => {
-
-  let toDoName = "Go to College";
-  let toDoDate = "4/10/2023";
-
+const ToDoItem = ({ toDoName, toDoDate }) => {
   return (
     <div className="container">
       <div className="row my-row">
@@ -18,4 +14,4 @@ const ToDoItem2 = () => {
   );
 }
 
-export default ToDoItem2;
+export default ToDoItem;
